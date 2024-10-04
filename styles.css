@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  color: #333;
+}
+
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(10, 30px);
+  grid-gap: 1px;
+  background-color: #bdbdbd;
+  border: 1px solid #999;
+  margin-bottom: 20px;
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cell.revealed {
+  background-color: #eee;
+}
+
+.cell.mine {
+  background-color: #f00;
+}
+
+#new-game-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#new-game-btn:hover {
+  background-color: #45a049;
+}
